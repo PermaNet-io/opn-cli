@@ -83,8 +83,16 @@ pip install opn-cli
 ## Configure
 1. Generate an api_key and api_secret. See: https://docs.opnsense.org/development/how-tos/api.html#creating-keys.
 
-2. Create the default config file `~/.opn-cli/conf.yaml`
+2. Create the default config file.
+
+   Default locations:
+   - `~/.opn-cli/conf.yaml`
+   - `~/.config/opn-cli/conf.yaml` if `XDG_CONFIG_HOME` is set
+
+   Example:
     ```
+    mkdir -p ~/.opn-cli
+    cat > ~/.opn-cli/conf.yaml <<'EOF'
     ---
     api_key: your_api_key
     api_secret: your_api_secret
@@ -92,7 +100,12 @@ pip install opn-cli
     timeout: 60
     ssl_verify: true
     ca: ~/.opn-cli/ca.pem
+    EOF
     ```
+
+   If you do not want to keep credentials in the config file, you can also pass a different file with `-c /path/to/conf.yaml`
+   and override values with environment variables such as `OPN_API_KEY`, `OPN_API_SECRET`, `OPN_API_URL`, and `OPN_CONFIG`.
+
 3. Install required opnsense plugins
     ```
     opn-cli plugin install os-firewall
@@ -105,6 +118,11 @@ pip install opn-cli
 Each command and subcommand support the `-h` or `--help` option to show help for the current command.
 
 The config basedir is `~/.opn-cli/`. If the environment variable `XDG_CONFIG_HOME` is set, `~/.config/opn-cli` will be used instead.
+
+Quick example:
+```
+opn-cli -c ~/.opn-cli/conf.yaml route gateway status
+```
 
 ```
 $ opn-cli --help
@@ -1124,4 +1142,3 @@ scripts/coverage
 Please use the GitHub issues functionality to report any bugs or requests for new features. Feel free to fork and submit pull requests for potential contributions.
 
 All contributions must pass all existing tests, new features should provide additional unit/acceptance tests.
-

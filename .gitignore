@@ -150,7 +150,3 @@ cython_debug/
 /.vagrant/
 /output
 
-
-# Dolt database files (added by bd init)
-.dolt/
-*.db
