@@ -6,3 +6,4 @@ dolt-server.log
 dolt-server.lock
 dolt-server.port
 dolt-server.activity
+backup/
