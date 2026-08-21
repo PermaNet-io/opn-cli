@@ -1,0 +1,7 @@
+# Managed by bd and the poly-homelab Beads Dolt deployment.
+backup.enabled: false
+dolt:
+    shared-server: true
+    auto-start: false
+sync:
+    remote: "git+https://github.com/PermaNet-io/opn-cli.git"
