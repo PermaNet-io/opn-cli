@@ -1,0 +1,4 @@
+[submodule "vendor/permanet-pod"]
+	path = vendor/permanet-pod
+	url = https://github.com/PermaNet-io/permanet-pod.git
+	branch = dev
