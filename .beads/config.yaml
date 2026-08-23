@@ -4,4 +4,4 @@ dolt:
     shared-server: true
     auto-start: false
 sync:
-    remote: "git+https://github.com/PermaNet-io/opn-cli.git"
+    remote: "https://root@dolt.permanet.io:32551/opn_cli"
