@@ -1,7 +1,7 @@
-# Managed by bd and the poly-homelab Beads Dolt deployment.
-backup.enabled: false
+sync:
+    remote: "https://root@dolt.permanet.io:32551/opn_cli"
 dolt:
     shared-server: true
     auto-start: false
-sync:
-    remote: "https://root@dolt.permanet.io:32551/opn_cli"
+backup:
+    enabled: false
