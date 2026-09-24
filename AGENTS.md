@@ -29,6 +29,7 @@ and packaging configuration lives at the repository root.
 - Preserve upstream attribution and licensing in this public repository.
 - Use Beads (`bd`) for durable work tracking and GitHub pull requests against
   `main`.
+
 ## Beads authority profile
 
 This repository opts into Beads `team-maintainer` through
