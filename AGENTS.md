@@ -29,7 +29,7 @@ and packaging configuration lives at the repository root.
 - Preserve upstream attribution and licensing in this public repository.
 - Use Beads (`bd`) for durable work tracking and GitHub pull requests against
   `main`.
-+## Beads authority profile
+## Beads authority profile
 
 This repository opts into Beads `team-maintainer` through
 `.beads/config.yaml`. For requested work, agents may commit validated changes,
@@ -38,7 +38,7 @@ open pull requests as routine handoff actions. A current user instruction to
 hold a commit or push takes precedence. Follow branch protection and review
 requirements.
 
--<!-- BEGIN BEADS CODEX SETUP -->
+<!-- BEGIN BEADS CODEX SETUP -->
 # Beads Issue Tracking
 
 This project uses [Beads (bd)](https://github.com/gastownhall/beads) for issue tracking.
