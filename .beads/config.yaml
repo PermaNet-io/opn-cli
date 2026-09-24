@@ -5,3 +5,5 @@ dolt:
     auto-start: false
 backup:
     enabled: false
+agent:
+    profile: team-maintainer
